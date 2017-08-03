@@ -1,0 +1,9 @@
+1. UDP协议编程时:
+	- client侧不需要bind(),而是由OS自动分配port; server侧需要bind() well-known port#
+	- 注意：当二者send/receive角色互换后，就需要给client一个well-known port#了！！
+	- 只要涉及到UDP是双方通信，二者都需要well-known port#
+	- 而且，都需要在send()前，先bind();在send()后，才recv()
+	- bind()[为recv准备] —> send() —> recv() loop
+
+2. why use ::bind(), rather than bind() directly?
+3. sender,receiver  buffer size difference leads to part of data lost ??
