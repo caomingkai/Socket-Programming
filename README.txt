@@ -1,7 +1,5 @@
-
-a. Mingkai Cao
-
-b. 7151889244
+a.
+b.
 
 c. Implemented:
 	- TCP connection between a Client and an Edge Server;
